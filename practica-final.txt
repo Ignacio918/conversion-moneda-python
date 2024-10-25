@@ -1,0 +1,50 @@
+-----------------
+
+Problemática:
+"La empresa Orbyt está perdiendo dinero porque en las transacciones desde moneda internacional hay muchos errores del personal
+al realizar cálculos a mano para pasar de Euro a Peso Argentino y Dólar a Peso Argentino en los pagos de importaciones"
+
+-----------------
+
+
+-----------------
+
+Algoritmo:
+
+1. Definir el valor actual del Euro y Dolar con respecto al Peso Argentino
+2. Solicitar al usuario el tipo de conversión (euro a ars o dolara ars)
+3. Solicitar al usuario el monto a convertir
+4. Realizar la conversión utilizando el tipo de cambio correspondiente
+5. Mostrar el resultado de la conversión al usuario
+
+-----------------
+
+Pseudocódigo:
+
+Inicio
+    
+    # Paso 1 : Definir el valor actual del Euro y Dolar con respecto al Peso Argentino
+
+    Definir tipo_cambio_eur_a_ars = 1066
+    Definir tipo_cambio_usd_a_ars = 985
+
+    # Paso 2 : Solicitar al usuario el tipo de conversión (euro a ars o dolara ars)
+
+    Mostrar mensaje: "Ingrese la moneda origen para la conversión(EUR/USD): "
+
+    # Paso 3 : Solicitar al usuario el monto a convertir
+
+    Mostrar mensaje: "Ingrese el monto a convertir: "
+
+    # Paso 4 : Realizar la conversión utilizando el tipo de cambio correspondiente
+    # Paso 5 : Mostrar el resultado de la conversión al usuario
+    
+    Si tipo_conversion == "EUR"
+        Calcular resultado = monto_a_convertir * tipo_cambio_eur_a_ars
+        Mostrar "El resultado de la conversión de EUR a ARS es:", resultado
+    Sino si tipo_conversion == "USD"
+        Calcular resultado = monto_a_convertir * tipo_cambio_usd_a_ars
+        Mostrar "El resultado de la conversión de USD a ARS es:", resultado
+    Sino
+        Mostrar: "No está disponible este tipo de cambio de conversión actualmente"
+Fin
